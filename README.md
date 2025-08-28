@@ -1,12 +1,53 @@
-# React + Vite
+# projeto_pubs
+# 🧠 NeuroPost
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI-powered web app to create and manage publications.  
+Designed as a portfolio project to demonstrate skills in **web development**, **artificial intelligence integration** and **Database manipulation**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demo
 
-## Expanding the ESLint configuration
+🎥 [Video Demo](https://youtu.be/seu-video)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Screenshot](docs/screenshot.png)  
+<img width="1919" height="917" alt="image" src="https://github.com/user-attachments/assets/98bdb2aa-c5f2-4a29-bae5-8cd90cbf07b2" />
+
+
+---
+
+## ✨ Features
+
+- ✅ Generate publications using AI  
+- ✅ Edit and manage posts  
+- ✅ Download publications or save pubications  
+- ✅ Simple and intuitive UI  
+
+---
+
+## 🛠️ Tech Stack
+
+- [React](https://react.dev/) – Frontend  
+- [Node.js](https://nodejs.org/) – Backend  
+- [Yarn](https://yarnpkg.com/) – Package manager  
+- [MongoDB](https://www.mongodb.com/) – NoSQL database for storing publications and user data  
+- [Gemini](https://ai.google.dev/) – AI-powered content generation by Google   
+
+---
+
+## 📦 Installation
+
+Clone the repository and install dependencies:
+
+```bash
+# Clone the repo
+git clone https://github.com/seuusuario/neuropost.git
+
+# Enter the folder
+cd neuropost
+
+# Install dependencies
+yarn install
+
+# Run the project
+yarn dev
