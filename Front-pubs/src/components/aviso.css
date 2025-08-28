@@ -1,0 +1,44 @@
+/* Estilo aviso */
+.error {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: left;
+
+  position: fixed;
+  top: 30px;
+  right: -10px;
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border: none;
+  border-right: none;
+  width: 0px;
+  height: 70px;
+  gap: 30px;
+  font-family: poppins;
+  color: transparent;
+}
+
+.error.open {
+  width: 300px;
+  color: #fff;
+}
+
+.error i {
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.error h1 {
+  font-size: 18px;
+  overflow: hidden;
+  height: 100%;
+  text-align: left;
+  align-content: center;
+}
+/* Estilo aviso */

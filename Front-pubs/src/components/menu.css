@@ -1,0 +1,89 @@
+/* estilo menu */
+
+.menu_lat {
+  font-family: poppins;
+
+  width: 60px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(14px);
+  padding: 40px 0px 40px 0;
+  box-shadow: 2px 0px 0px #000000b7;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.menu_lat.estate {
+  width: 220px;
+}
+
+.btn_exp {
+  width: 100%;
+}
+
+.btn_exp > i {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.itens-menu:hover {
+  background-color: #ff2222ad;
+}
+
+.itens-menu {
+  transition: 0.2s;
+  margin-right: 0.4px;
+  padding-left: 7px;
+}
+
+.itens-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4%;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  height: auto;
+}
+
+.itens-menu a .txt {
+  margin-left: 70px;
+  transition: 0.7s;
+  opacity: 0;
+}
+
+.menu_lat.estate .txt {
+  margin-left: 40px;
+  opacity: 1;
+}
+
+.itens-menu a .icon {
+  font-size: 24px;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.itens-menu img {
+  size: 20px;
+}
+
+.menu_lat .projetos {
+  opacity: 0;
+  transition: 0.5s;
+}
+.menu_lat .projetos.estate {
+  opacity: 1;
+}
+/* estilo menu */

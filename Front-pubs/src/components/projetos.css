@@ -1,0 +1,32 @@
+.contentProjects {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 10px 0px;
+  overflow: hidden;
+  width: 220px;
+  font-family: poppins;
+  font-size: 16px;
+}
+
+.contentProjects h1 {
+  padding: 10px;
+  font-family: rufina;
+  font-size: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.contentProjects ul {
+  padding: 10px;
+  font-family: poppins;
+  font-size: 16px;
+}
+
+.contentProjects li {
+  margin: 10px 0 0 0;
+}
+
+.contentProjects li:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  text-decoration: underline;
+}

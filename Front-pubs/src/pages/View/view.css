@@ -1,0 +1,258 @@
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  font-family: poppins;
+  overflow: hidden;
+}
+
+.view .box h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.view .box {
+  visibility: visible;
+  transition: 0.5s;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 30px 30px 0px 30px;
+}
+
+.view .nome {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  padding-right: 15px;
+  padding-left: 20px;
+  margin: 50px 80px 30px 80px;
+
+  font-family: poppins;
+}
+
+.view .nome i {
+  font-size: 24px;
+}
+
+.view .nome input {
+  font-size: 20px;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #fff;
+
+  font-family: poppins;
+  font-style: italic;
+}
+
+.content {
+  width: 100%;
+  height: 320px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0 80px 0 80px;
+}
+
+.view .box i {
+  transition: ease 0.5s;
+  color: #fff;
+}
+
+.view .box i:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.view .btn {
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+  margin-left: 5px;
+  gap: 4px;
+}
+
+.view .img {
+  display: flex;
+}
+
+.view .content img {
+  max-height: 320px;
+  cursor: zoom-in;
+}
+
+.view .desc {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.view .content textarea {
+  background-color: transparent;
+  align-items: center;
+  border: none;
+
+  resize: none;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
+  text-align: left;
+}
+
+.view .box button {
+  margin: 60px 40px 20px 30px;
+  width: 40%;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+
+  font-family: poppins;
+}
+
+.view .box button:hover {
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.view .delete {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.view .delete .link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.view .delete .link:hover {
+  text-decoration: underline;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.img_modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.img_modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.img_modal .imagemAmpliada {
+  cursor: zoom-out;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  border: none;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.loaderDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  height: 40px;
+  margin-top: 5px;
+}
+.loader {
+  width: 40px;
+  height: 16px;
+  aspect-ratio: 2.5;
+  --_g: no-repeat radial-gradient(circle closest-side, #ffffff 90%, #0000);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
